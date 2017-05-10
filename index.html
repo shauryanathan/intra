@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fitbit Blaze</title>
+	<link rel="stylesheet" href = "style.css">
+	<script src = "jquery.min.js"></script>
+</head>
+<a href = "bot.html"><img src = "icon.png" class = "bot"></a>
+	<section class = "landing">
+		<div class = "mainone">
+
+
+		 <p class = "paraone">Introducing</p><p class = "paratwo">the all new</p>
+			<img src = "img/fit.png" class = "imgone"><img src = "img/bit.png" class = "imgtwo">
+
+
+			<img src = "img/blaze.png" class = "imgthree"><br/>
+			<img src = "img/blazetwo.png" class = "imgfour"><br/>
+			<img src = "img/blaze3.png" class = "imgfive">
+			<p class = "head">BLAZE</p>
+		</div>
+		<div class = "subone">
+		    <img src = "img/balzefj.jpg" class = "imgseven">
+			<img src = "img/blazefr.jpg" class = "imgsix">
+			<img src = "img/blazefp.jpg" class = "imgeight">
+			<p class = "parathree">For Excercise</p>
+			<p class = "parathreeone">For Running</p>
+            <p class = "parathreetwo">For Parties</p>
+		</div>
+	</section>
+	<section class = "vidone">
+		<video src = "img/run.mp4" class = "videoone" muted autoplay loop>
+	</section>
+	<p class = "parafour"><span class = "spanone">Run</span> Healthier</p>
+	<p class="parafive">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna<font class = "l">.</font></p>
+
+		<section class = "vidtwo">
+		<video src = "img/party.mp4" autoplay = "true" class = "videotwo" muted loop>
+	</section>
+	<p class = "parasix"><span class = "spanone">Party</span> Healthier</p>
+	<p class="paraseven">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor<br/> incididunt ut labore et dolore magna.Lorem ipsum dolor sit amet, consectetur ad<br/>ipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna<span class = "k">.</span></p><br/></video></section></video></section>
+    <section class = "style">
+    <p class = "ten">Features</p>
+  <hr>
+          <img src = 'img/blazer.png' class = "imgten">
+    	<div id = "one">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br/>eiusmod
+        labore et dolore magna aliqua. Ut enim ad minim ven<br/>iam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br/>  ea commodo
+    	consequat. Duis aute irure dolor in reprehender<br/> it in voluptate.</div>
+
+    		<div id = "two">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br/>eiusmod
+        labore et dolore magna aliqua. Ut enim ad minim ven<br/>iam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br/>  ea commodo
+    	consequat. Duis aute irure dolor in reprehender<br/> it in voluptate.</div>
+
+    		<div id = "three">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br/>eiusmod
+        labore et dolore magna aliqua. Ut enim ad minim ven<br/>iam,
+    	quis nostrud exercitation ullamco laboris nisi ut aliquip ex<br/>  ea commodo
+    	consequat. Duis aute irure dolor in reprehender<br/> it in voluptate.</div>
+    </section>
+    <br/><br/><br/><br/><br/>
+    <section class = "form">
+       <p class = "eleven">Stay Updated</p>
+  <hr class = "ho">
+    	<input type = "text" class = "onee" placeholder = "Name"><input type = "text" class = "twos" placeholder = "Mail"><br/><br/><br/><br/>
+    	<a href = "#" class = "hl">Send
+    	</a>
+    </section><br/><br/><br/><br/>
+    <section class = "footer"><br/><br/><br/>
+    	<a style = "margin-left:30px;">Home</a><a>Tabs</a><a>Features</a><a>Contact</a><p class = "last"><span class = "do">&copy;</span>Yeh Bik Gayi hai <span class = "do">gormint</span></p>
+    </section>
+</body>
+<script>
+$(document).ready(function(){
+		$('.paraone').addClass('show');
+	setTimeout(function(){
+		$('.paratwo').addClass('show');
+	},800);
+	setTimeout(function(){
+		$('.imgone').addClass('show');
+		$('.imgtwo').addClass('show')
+	},1700);
+		setTimeout(function(){
+		$('.imgone').removeClass('show');
+		$('.imgtwo').removeClass('show');
+		$('.paratwo').removeClass('show');
+		$('.paraone').removeClass('show');
+	},3000);
+		setTimeout(function(){
+		$('.head').addClass('show');
+	},4300);
+        setTimeout(function(){
+          $('.imgthree').addClass('show');
+		  $('.imgfour').addClass('show');
+		  $('.imgfive').addClass('show');
+        },5300)
+         setTimeout(function(){
+		  $('.imgsix').addClass('show');
+        },6300)
+          setTimeout(function(){
+		  $('.imgseven').addClass('show');
+        },6600)
+          setTimeout(function(){
+		  $('.imgeight').addClass('show');
+        },6900)
+          setTimeout(function(){
+          	$('.bot').addClass("show")
+          },17000)
+
+})
+</script>
+<script>
+	$(window).scroll(function(){
+
+  var wScroll = $(this).scrollTop();
+
+
+if(wScroll > $('.imgseven').offset().top){
+        $('.videoone').addClass("show");
+     setTimeout(function(){
+     	 $('.parafour').addClass("show");
+        $('.parafive').addClass("show");
+     },500)
+};
+if(wScroll > $('.l').offset().top){
+         $('.videotwo').addClass("show");
+     setTimeout(function(){
+     	 $('.parasix').addClass("show");
+        $('.paraseven').addClass("show");
+     },500)
+
+};
+if (wScroll > $('.k').offset().top){
+         $('.ten').addClass("show");
+         $('hr').addClass("show");
+
+}
+if(wScroll > $('.ten').offset().top){
+		$('.imgten').addClass("show");
+		$('#one').addClass("show");
+		$('#two').addClass("show");
+		$('#three').addClass("show");
+	}
+})
+</script>
+</html>
