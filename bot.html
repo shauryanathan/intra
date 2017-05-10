@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BIT-BOT</title>
+	<script src = "jquery.min.js"></script>
+	<link rel = "stylesheet" href = "bot.css">
+</head>
+<body>
+<div id = "header">
+<p class = "spec">BIT-BOT</p>
+<a href = "index.html">Back</a>
+</div>
+<div id = "container">
+</div>
+<div id = "controls">
+	<textarea id = "textbox" placeholder = "Say Something To Bitbot"></textarea>
+	<img src = "send.png" id = "send">
+	<br/>
+	<input checked type = "checkbox" id = "enter">
+</div>
+<script>
+
+    var username = "";
+
+	function sendmessage(message){
+
+
+ 			var prevState = $("#container").html();
+
+ 			if(prevState.length > 3){
+ 				prevState = prevState + "<br/>"
+ 			}
+
+ 			$("#container").html(prevState +"<span class = 'currentmessage'>" + "<span class = 'bot'><img src = 'bot.png'>&nbsp;</span>"+ message+"</span>");
+ 			$(".currentmessage").hide();
+ 			$(".currentmessage").delay(500).fadeIn();
+ 			$(".currentmessage").removeClass("currentmessage")
+
+
+	}
+
+	function getusername(){
+		sendmessage("<span class = 'lol'>Hey,I'm BitBot,What's your name ?</span>")
+	}
+
+	function ai(message){
+
+		if(username.length < 3){
+			username = message;
+			sendmessage("<span class = 'lol'>Oh,Hi " + username + " ask me what i think about apple watch</span>");
+		}
+
+		if(message.indexOf("apple")>=0){
+			sendmessage("<span class = 'lol'>Yeh Apple waale saare milke tumko pagal bana rahe hai ,</span>")
+		}
+		if(message.indexOf("Apple")>=0){
+			sendmessage("<span class = 'lol'>Yeh Apple waale saare milke tumko pagal bana rahe hai ,</span>")
+		}
+		if(message.indexOf("boss")>=0){
+			sendmessage("<span class = 'lol'>rajni</span>")
+		}
+		if(message.indexOf("scene")>=0){
+			sendmessage("<span class = 'lol'>apna toh sahi hai</span>")
+		}
+	}
+
+	$(function(){
+
+ 		getusername();
+
+ 		$("#textbox").keypress(function(event){
+ 			if (event.which == 13){
+         		if($("#enter").prop("checked")){
+                   	$("#send").click();
+                   event.preventDefault();
+         		}
+ 			}
+
+ 		});
+
+ 		$("#send").click(function(){
+
+ 			var username = "<span class = 'un' ><img src = 'guy.png'></span>"
+
+ 			var newMessage = $("#textbox").val();
+
+ 			$("#textbox").val("");
+
+ 			var prevState = $("#container").html();
+
+ 			if(prevState.length > 3){
+ 				prevState = prevState + "<br/>"
+ 			}
+
+ 			$("#container").html(prevState+username+"<span class = 'lol'>"+ newMessage+"</span>");
+
+ 			$("#container").scrollTop($("#container").prop("scrollHeight"))
+
+ 			ai(newMessage)
+ 		});
+
+    $("#enter").hide();
+    $("#send").hide();
+	});
+</script>
+</body>
+</html>
