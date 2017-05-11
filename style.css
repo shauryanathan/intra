@@ -99,8 +99,8 @@
 	transition:1s;
 }
 .parathree{
-    display:inline;
-    margin-right:317px;
+	display:inline;
+    margin-right:323px;
     font-size:30px;
     margin-top:-520px;
     color:#fff;
@@ -113,7 +113,7 @@
     color:#fff;
 }
 .parathreetwo{
-    display:inline;
+	display:inline;
     margin-right:323px;
     font-size:30px;
     margin-top:-520px;
@@ -123,7 +123,6 @@
 	width:900px;
 	margin-left:-60px;
 	opacity:0;
-	margin-top:15px;
 }
 .videoone.show{
     transition:0.5s;
@@ -174,7 +173,7 @@
 	opacity:0;
 }
 .parasix{
-	margin-left:10px;
+	margin-left:-9px;
 	font-size:80px;
 	margin-top:-480px;
 	opacity:0;
@@ -191,7 +190,7 @@
 }
 .paraeight{
 	margin-top:0px;
-	margin-left:920px;
+	margin-left:890px;
 	font-size:30px;
 }
 .paranine{
@@ -306,8 +305,14 @@ hr.show{
 	opacity:1;
 }
 .form{
-	margin-top:160px;
+	margin-top:60px;
 	margin-left:270px;
+	opacity:0;
+}
+.form.show{
+	margin-top:160px;
+	opacity:1;
+	transition:1s;
 }
 .onee:focus{
     border-bottom:4px solid #ff5f6d;
@@ -364,7 +369,7 @@ hr.show{
 	color:#fff;
 }
 .last{
-	margin-left:1200px;
+	margin-left:1120px;
 	margin-top:-20px;
 	font-size:20px;
 	color:#fff;
@@ -388,7 +393,7 @@ hr.show{
 .paratwo{
 	font-size:30px;
 	margin-left:380px;
-	margin-top:-60px;
+	margin-top:-90px;
 	opacity:0;
 	letter-spacing:2px;
 }
