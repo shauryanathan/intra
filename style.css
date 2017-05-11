@@ -122,11 +122,11 @@
 .videoone{
 	width:900px;
 	margin-left:-60px;
-	margin-top:10px;
+	margin-top:20px;
 	opacity:0;
 }
 .videoone.show{
-    transition:0.5s;
+        transition:0.5s;
 	margin-left:-10px;
 	opacity:1;
 
