@@ -100,14 +100,14 @@
 }
 .parathree{
 	display:inline;
-    margin-right:340px;
+    margin-right:342px;
     font-size:20px;
     margin-top:-520px;
     color:#fff;
 }
 .parathreeone{
     display:inline;
-    margin-right:320px;
+    margin-right:342px;
     font-size:20px;
     margin-top:-520px;
     color:#fff;
@@ -392,8 +392,8 @@ hr.show{
 }
 .paratwo{
 	font-size:30px;
-	margin-left:380px;
-	margin-top:-90px;
+	margin-left:390px;
+	margin-top:-70px;
 	opacity:0;
 	letter-spacing:2px;
 }
