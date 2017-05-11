@@ -84,7 +84,6 @@
 .imgseven.show{
 	margin-left:-12px;
 	opacity:1;
-	margin-bottom:-60px;
 	transition:1s;
 }
 .imgeight.show{
@@ -150,7 +149,7 @@
 }
 .parafive.show{
 	transition:1s;
-	margin-top:-20px;
+	margin-top:-40px;
 	opacity:1;
 }
 .spanone{
@@ -159,11 +158,10 @@
 .videotwo{
 	width:900px;
 	margin-left:331px;
-	margin-top:175px;
 	opacity:0;
 }
 .videotwo.show{
-    transition:1s;
+        transition:1s;
 	margin-left:531px;
 	opacity:1;
 }
@@ -175,7 +173,7 @@
 }
 .parasix{
 	margin-left:-9px;
-	font-size:80px;
+	font-size:60px;
 	margin-top:-480px;
 	opacity:0;
 }
@@ -192,7 +190,7 @@
 .paraeight{
 	margin-top:0px;
 	margin-left:890px;
-	font-size:30px;
+	font-size:20px;
 }
 .paranine{
     line-height:30px;
