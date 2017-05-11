@@ -67,13 +67,13 @@
 }
 .imgsix{
 	margin-left:-15.6px;
-	margin-top:290px;
+	margin-top:190px;
 	margin-bottom:-60px;
 	opacity:0;
 }
 .imgseven{
 	margin-left:-32px;
-	margin-top:490px;
+	margin-top:390px;
 	margin-bottom:-60px;
 	opacity:0;
 }
@@ -160,6 +160,7 @@
 	width:900px;
 	margin-left:331px;
 	opacity:0;
+	margin-top:400px;
 }
 .videotwo.show{
         transition:1s;
